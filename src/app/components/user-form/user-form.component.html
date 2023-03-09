@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup" class="m-3">
+  <div class="pb-3">
+    <label class="block">Prénom</label>
+    <input id="firstName" pInputText formControlName="firstName">
+  </div>
+  <div class="pb-3">
+    <label class="block">Nom</label>
+    <input pInputText formControlName="lastName">
+  </div>
+  <div>
+    <button pButton label="Enregistrer" (click)="save()"></button>
+  </div>
+</form>
